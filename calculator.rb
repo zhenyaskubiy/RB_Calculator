@@ -30,7 +30,7 @@ when "-"
     puts "Result #{substract(num1, num2)}"
 when "*"
     puts "Result #{multiply(num1, num2)}"
-when
+when "/"
     puts "Result #{divide(num1, num2)}"
 else
     puts "Error"
