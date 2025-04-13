@@ -16,6 +16,10 @@ def divide(x,y)
 end
 puts "Choose an operation: +, -, *, /"
 operation = gets.chomp
+unless ["+", "-", "*", "/"].include?(operation)
+    puts "Invalid operation!"
+    exit
+  end
 
 puts "Enter the first number:"
 num1 = gets.to_f
@@ -25,13 +29,13 @@ num2 = gets.to_f
 
 case operation
 when "+"
-    puts "Result #{addition(num1, num2)}"
+    puts "Result: #{addition(num1, num2)}"
 when "-"
-    puts "Result #{substract(num1, num2)}"
+    puts "Result: #{substract(num1, num2)}"
 when "*"
-    puts "Result #{multiply(num1, num2)}"
+    puts "Result: #{multiply(num1, num2)}"
 when "/"
-    puts "Result #{divide(num1, num2)}"
+    puts "Result: #{divide(num1, num2)}"
 else
     puts "Error"
 end
