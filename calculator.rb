@@ -14,3 +14,11 @@ def divide(x,y)
     "Dividing by zero is not possible"
   end
 end
+puts "Choose an operation: +, -, *, /"
+operation = gets.chomp
+
+puts "Enter the first number:"
+num1 = gets.to_f
+
+puts "Enter the second number:"
+num2 = gets.to_f
