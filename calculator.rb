@@ -22,3 +22,16 @@ num1 = gets.to_f
 
 puts "Enter the second number:"
 num2 = gets.to_f
+
+case operation
+when "+"
+    puts "Result #{add(num1, num2)}"
+when "-"
+    puts "Result #{substract(num1, num2)}"
+when "*"
+    puts "Result #{multiply(num1, num2)}"
+when
+    puts "Result #{divide(num1, num2)}"
+else
+    puts "Error"
+end
