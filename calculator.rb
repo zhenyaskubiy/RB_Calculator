@@ -25,7 +25,7 @@ num2 = gets.to_f
 
 case operation
 when "+"
-    puts "Result #{add(num1, num2)}"
+    puts "Result #{addition(num1, num2)}"
 when "-"
     puts "Result #{substract(num1, num2)}"
 when "*"
